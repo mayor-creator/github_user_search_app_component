@@ -1,4 +1,4 @@
-import "./App.css";
+import "../scss/global/_boilerplate.scss";
 
 function App() {
 	return (

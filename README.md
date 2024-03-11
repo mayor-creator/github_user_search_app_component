@@ -71,12 +71,13 @@ const proudOfThisFunc = () => {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [My Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This article explains why we should include custom CSS reset in our project and the breakdown of information was helpful to my understanding of why CSS reset are important.
+
+- [How to add Sass support to a Vite React app](https://dev.to/hexcube/how-to-add-sass-support-to-a-vite-react-app-37p) - This is an amazing article explained how import and add scss files to your React. I'd recommend it to anyone having issue on how t add scss files to the vite react app.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Threads - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mayor-creator](https://www.frontendmentor.io/profile/mayor-creator)
+- Threads - [@mayor_creator](https://www.threads.net/@mayor_creator)
 
 ## Acknowledgments

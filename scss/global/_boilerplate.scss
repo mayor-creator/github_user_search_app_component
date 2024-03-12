@@ -68,3 +68,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.wrapper {
+  width: min(100% - 32px, 730px);
+  margin-inline: auto;
+}

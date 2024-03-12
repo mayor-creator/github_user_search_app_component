@@ -3,15 +3,19 @@ import "../scss/global/_colors.scss";
 import "../scss/global/_fonts.scss";
 import "../scss/global/_layout.scss";
 import "../scss/global/_typography.scss";
+import "../scss/components/_header.scss";
+
+import Header from "./Header";
 
 function App() {
 	return (
 		<>
+			<Header />
+			{/*
 			<section>
 				<div className="wrapper">
 					<h1>Git user app </h1>
 					<header>
-						<h2>devfinder</h2>
 						<p>Light Dark </p>
 					</header>
 					<section>
@@ -37,6 +41,7 @@ function App() {
 					</section>
 				</div>
 			</section>
+			*/}
 		</>
 	);
 }

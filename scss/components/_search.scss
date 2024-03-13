@@ -1,0 +1,38 @@
+.main {
+  &_search {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.625rem;
+    box-shadow: inset 5em 1em 5em 1em hsl(0, 0%, 100%);
+    padding: 0.313rem 0.625rem 0.313rem 0rem;
+    cursor: pointer;
+  }
+
+  &_image {
+    margin: 0.938rem;
+  }
+
+  &_input {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+    flex-grow: 1;
+    margin-right: 0.625rem;
+  }
+
+  &_input:focus {
+    outline: none;
+  }
+
+  &_button {
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    cursor: pointer;
+    height: 3.125rem;
+    width: 6.625rem;
+  }
+
+}

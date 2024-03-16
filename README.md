@@ -73,7 +73,9 @@ const proudOfThisFunc = () => {
 
 - [My Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This article explains why we should include custom CSS reset in our project and the breakdown of information was helpful to my understanding of why CSS reset are important.
 
-- [How to add Sass support to a Vite React app](https://dev.to/hexcube/how-to-add-sass-support-to-a-vite-react-app-37p) - This is an amazing article explained how import and add scss files to your React. I'd recommend it to anyone having issue on how t add scss files to the vite react app.
+- [How to add Sass support to a Vite React app](https://dev.to/hexcube/how-to-add-sass-support-to-a-vite-react-app-37p) - This is an amazing article explained how import and add scss files to your React. I'd recommend it to anyone having issue on how t0 add scss files to the vite react app.
+
+- [How to import and use an image in a React component] (<https://bobbyhadz.com/blog/react-import-image>) -This blog post explains how to implement image into your react component.
 
 ## Author
 

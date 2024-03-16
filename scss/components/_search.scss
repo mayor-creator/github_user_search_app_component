@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: row;
     border-radius: 0.625rem;
-    box-shadow: inset 5em 1em 5em 1em hsl(0, 0%, 100%);
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-white);
     padding: 0.313rem 0.625rem 0.313rem 0rem;
     cursor: pointer;
+    background-color: var(--color-white);
+    margin-top: 1.25rem;
   }
 
   &_image {
@@ -13,7 +15,6 @@
   }
 
   &_input {
-    background-color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
     color: hsl(0, 0%, 0%);
@@ -35,4 +36,80 @@
     width: 6.625rem;
   }
 
+  &_information {
+    background-color: var(--color-white);
+    border-radius: 0.625rem;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-white);
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.information_container {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.avatar {
+  border: 0.063rem solid #979797;
+  border-radius: 50%;
+}
+
+.profile_info_container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 4.375rem;
+  margin-right: 0.188rem;
+}
+
+.profile_name {
+  color: var(--color-licorice);
+}
+
+.profile_date {
+  color: var(--color-slate_grey);
+}
+
+.profile_login {
+  color: var(--color-blue);
+}
+
+.bio_information {
+  color: var(--color-san_marion);
+  padding: 1.25rem 1.875rem 1.25rem 0rem;
+}
+
+.github_information {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color-ghost_white);
+  border-radius: 0.625rem;
+  box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-ghost_white);
+  height: 5.313rem;
+  width: 30rem;
+  margin: 1.25rem 0rem 1.25rem 0rem;
+}
+
+.github {
+  color: var(--color-san_marion);
+}
+
+.github_number {
+  color: var(--color-licorice);
+}
+
+.github_social {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.social_items {
+  display: flex;
+  gap: 1.25rem;
 }

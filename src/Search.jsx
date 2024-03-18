@@ -26,7 +26,7 @@ function Search() {
 							type="search"
 							name="search"
 							id="username-search"
-							placeholder="Search GitHub username.."
+							placeholder="Search GitHub username..."
 						/>
 						<button className="main_button">Search</button>
 					</section>

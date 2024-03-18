@@ -2,6 +2,8 @@
   Author: Josh Comeau 
   1. Use a more-intuitive box-sizing model.
 */
+@use "../global/layout" as l;
+
 *,
 *::before,
 *::after {
@@ -69,7 +71,12 @@ h6 {
   isolation: isolate;
 }
 
+/* Author: Paul Aboagye */
 .wrapper {
   width: min(100% - 2rem, 45.625rem);
   margin-inline: auto;
+
+  @include l.tablet {
+    width: 35.813rem;
+  }
 }

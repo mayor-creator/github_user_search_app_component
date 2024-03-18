@@ -42,10 +42,14 @@ function Search() {
 							/>
 							<div className="profile_container">
 								<div className="profile_info_container">
-									<h1 className="profile_name">The Octocat</h1>
-									<p className="profile_date">Joined 25 Jan 2011</p>
+									<div className="info_item">
+										<h1 className="profile_name">The Octocat</h1>
+										<p className="profile_login">@octocat</p>
+									</div>
+									<div className="info_item">
+										<p className="profile_date">Joined 25 Jan 2011</p>
+									</div>
 								</div>
-								<p className="profile_login">@octocat</p>
 								<div className="bio_container">
 									<p className="bio_information">
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

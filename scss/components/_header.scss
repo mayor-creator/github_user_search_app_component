@@ -11,9 +11,10 @@
 
   &_button {
     border: 0px;
-    background-color: var(--color-white);
+    background-color: var(--color-ghost_white);
     font-size: 0.813rem;
     cursor: pointer;
+    color: var(--color-san_marion);
   }
 
   &_image {
@@ -21,8 +22,4 @@
     height: auto;
     margin-left: 0.625rem;
   }
-}
-
-body {
-  background-color: #F6F8FF;
 }

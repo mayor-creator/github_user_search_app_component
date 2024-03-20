@@ -181,4 +181,33 @@
 .social_items {
   display: flex;
   gap: 1.25rem;
+  color: var(--color-san_marion);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--color-san_marion);
+}
+
+a:visited {
+  color: var(--color-san_marion);
+}
+
+a:active {
+  color: var(--color-san_marion);
+}
+
+.profile_link:link {
+  color: var(--color-blue);
+}
+
+.profile_link:visited {
+  color: var(--color-blue);
+}
+
+.profile_link:active {
+  color: var(--color-blue);
 }

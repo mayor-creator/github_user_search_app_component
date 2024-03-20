@@ -5,7 +5,26 @@ import twitterImage from "./assets/images/icon-twitter.svg";
 import websiteImage from "./assets/images/icon-website.svg";
 import profileImage from "./assets/images/github-octocat.jpg";
 
+import { useState } from "react";
+
 function Search() {
+	const gitHubAPI = `https://api.github.com/users/`;
+	const [text, setText] = useState("");
+	const [data, setData] = useState(null);
+
+	// creating a async function to fetch api
+	const handleClickFetchAPI = async () => {
+		const response = await fetch(`${gitHubAPI}${text}`);
+		try {
+			if (response.ok) {
+				const jsonResponse = await response.json();
+				setData(jsonResponse);
+			}
+		} catch (error) {
+			console.log("Error fetching data: ", error);
+		}
+	};
+
 	return (
 		<>
 			<main className="main">
@@ -27,8 +46,14 @@ function Search() {
 							name="search"
 							id="username-search"
 							placeholder="Search GitHub username..."
+							value={text}
+							onChange={(event) => setText(event.target.value)}
 						/>
-						<button className="main_button">Search</button>
+						<button
+							className="main_button"
+							onClick={handleClickFetchAPI}>
+							Search
+						</button>
 					</section>
 
 					<section className="main_information">

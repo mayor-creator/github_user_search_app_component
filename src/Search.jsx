@@ -47,6 +47,7 @@ function Search() {
 										<h1 className="profile_name">{data.name}</h1>
 										<p className="profile_login">
 											<a
+												className="profile_link"
 												href={`${data.html_url}`}
 												target="_blank">
 												@{data.login}

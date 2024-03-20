@@ -11,6 +11,7 @@ function Search() {
 	const gitHubAPI = `https://api.github.com/users/`;
 	const [text, setText] = useState("");
 	const [data, setData] = useState(null);
+	const [defaultData, setDefaultData] = useState(true);
 
 	// creating a async function to fetch api
 	const handleClickFetchAPI = async () => {
@@ -23,9 +24,12 @@ function Search() {
 		} catch (error) {
 			console.log("Error fetching data: ", error);
 		}
+		/* setting the default data to false after api data
+		   is fetched */
+		setDefaultData(false);
 	};
 
-	// handling data after handleClickFetchAPI function
+	/* handling data after handleClickFetchAPI function get data*/
 	const fetchData = (data) => {
 		if (data) {
 			return (
@@ -104,7 +108,7 @@ function Search() {
 											/>
 											<p>
 												<a
-													href={`http://${data.blog}`}
+													href={`${data.blog}`}
 													target="_blank">
 													{data.blog != "" ? data.blog : "Not Available "}
 												</a>
@@ -161,87 +165,90 @@ function Search() {
 							Search
 						</button>
 					</section>
-					{/*  
-					<section className="main_information">
-						<div className="information_container">
-							<img
-								className="avatar"
-								src={profileImage}
-								alt="profile picture"
-								height={117}
-								width={117}
-							/>
-							<div className="profile_container">
-								<div className="profile_info_container">
-									<div className="info_item">
-										<h1 className="profile_name">The Octocat</h1>
-										<p className="profile_login">@octocat</p>
-									</div>
-									<div className="info_item">
-										<p className="profile_date">Joined 25 Jan 2011</p>
-									</div>
-								</div>
-								<div className="bio_container">
-									<p className="bio_information">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-										Donec odio. Quisque volutpat mattis eros.
-									</p>
-									<div className="github_information">
-										<div className="github_items">
-											<span className="github">Repos</span>
-											<h2 className="github_number">8</h2>
+
+					{/* Rendering default data */}
+					{defaultData && (
+						<section className="main_information">
+							<div className="information_container">
+								<img
+									className="avatar"
+									src={profileImage}
+									alt="profile picture"
+									height={117}
+									width={117}
+								/>
+								<div className="profile_container">
+									<div className="profile_info_container">
+										<div className="info_item">
+											<h1 className="profile_name">The Octocat</h1>
+											<p className="profile_login">@octocat</p>
 										</div>
-										<div className="github_items">
-											<span className="github">Followers</span>
-											<h2 className="github_number">3938</h2>
-										</div>
-										<div className="github_items">
-											<span className="github">Following</span>
-											<h2 className="github_number">9</h2>
+										<div className="info_item">
+											<p className="profile_date">Joined 25 Jan 2011</p>
 										</div>
 									</div>
-									<div className="github_social">
-										<div className="social_items">
-											<img
-												src={locationImage}
-												alt="location"
-											/>
-											<p>San Francisco</p>
+									<div className="bio_container">
+										<p className="bio_information">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+											Donec odio. Quisque volutpat mattis eros.
+										</p>
+										<div className="github_information">
+											<div className="github_items">
+												<span className="github">Repos</span>
+												<h2 className="github_number">8</h2>
+											</div>
+											<div className="github_items">
+												<span className="github">Followers</span>
+												<h2 className="github_number">3938</h2>
+											</div>
+											<div className="github_items">
+												<span className="github">Following</span>
+												<h2 className="github_number">9</h2>
+											</div>
 										</div>
-										<div className="social_items">
-											<img
-												src={twitterImage}
-												alt="twitter"
-											/>
-											<p>Not Available</p>
-										</div>
-										<div className="social_items">
-											<img
-												src={websiteImage}
-												alt="website"
-											/>
-											<p>
-												<a
-													href="http://"
-													target="_blank">
-													https://github.blog
-												</a>
-											</p>
-										</div>
-										<div className="social_items">
-											<img
-												src={companyImage}
-												alt="company"
-											/>
-											<p>@github</p>
+										<div className="github_social">
+											<div className="social_items">
+												<img
+													src={locationImage}
+													alt="location"
+												/>
+												<p>San Francisco</p>
+											</div>
+											<div className="social_items">
+												<img
+													src={twitterImage}
+													alt="twitter"
+												/>
+												<p>Not Available</p>
+											</div>
+											<div className="social_items">
+												<img
+													src={websiteImage}
+													alt="website"
+												/>
+												<p>
+													<a
+														href="http://"
+														target="_blank">
+														https://github.blog
+													</a>
+												</p>
+											</div>
+											<div className="social_items">
+												<img
+													src={companyImage}
+													alt="company"
+												/>
+												<p>@github</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
-         */}
+						</section>
+					)}
 
+					{/* Calling fetchData function */}
 					{fetchData(data)}
 				</div>
 			</main>

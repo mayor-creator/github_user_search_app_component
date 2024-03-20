@@ -77,6 +77,10 @@ const proudOfThisFunc = () => {
 
 - [How to import and use an image in a React component] (<https://bobbyhadz.com/blog/react-import-image>) -This blog post explains how to implement image into your react component.
 
+- [The Complete Guide to Days.js](https://mirzaleka.medium.com/the-complete-guide-to-day-js-fb835a5d945a) - This article explains how Days.js library works and how to use it in your project. I'd recommend it to anyone who wants to learn how to use Days.js library.
+
+- [JavaScript Dates – How to Use the DayJS Library to work with Date and Time in JS](https://www.freecodecamp.org/news/javascript-date-time-dayjs/#howtoinstallthedayjslibrary) - Another great article on how to use Days.js library.
+
 ## Author
 
 - Frontend Mentor - [@mayor-creator](https://www.frontendmentor.io/profile/mayor-creator)

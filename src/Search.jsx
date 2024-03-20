@@ -4,6 +4,7 @@ import searchImage from "./assets/images/icon-search.svg";
 import twitterImage from "./assets/images/icon-twitter.svg";
 import websiteImage from "./assets/images/icon-website.svg";
 import profileImage from "./assets/images/github-octocat.jpg";
+import dayjs from "dayjs";
 
 import { useState } from "react";
 
@@ -59,7 +60,9 @@ function Search() {
 										</p>
 									</div>
 									<div className="info_item">
-										<p className="profile_date">Joined {data.created_at}</p>
+										<p className="profile_date">
+											Joined {dayjs(`${data.created_at}`).format("DD MMM YYYY")}
+										</p>
 									</div>
 								</div>
 								<div className="bio_container">

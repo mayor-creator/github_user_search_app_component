@@ -47,7 +47,6 @@
     color: var(--color-blue);
   }
 
-
   .profile_link:link {
     color: var(--color-blue);
   }
@@ -71,7 +70,6 @@
   .profile_name {
     color: #2B3442;
   }
-
 }
 
 .DARK {
@@ -117,7 +115,6 @@
   .login {
     color: var(--color-blue);
   }
-
 
   .profile_link:link {
     color: var(--color-blue);

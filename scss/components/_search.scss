@@ -5,10 +5,8 @@
     display: flex;
     flex-direction: row;
     border-radius: 0.625rem;
-    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-white);
     padding: 0.313rem 0.625rem 0.313rem 0rem;
     cursor: pointer;
-    background-color: var(--color-white);
     margin-top: 1.25rem;
 
     @include l.mobile {
@@ -23,7 +21,6 @@
   &_input {
     border: none;
     cursor: pointer;
-    color: hsl(0, 0%, 0%);
     flex-grow: 1;
     margin-right: 0.625rem;
 
@@ -53,9 +50,7 @@
   }
 
   &_information {
-    background-color: var(--color-white);
     border-radius: 0.625rem;
-    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-white);
     padding: 1.25rem;
     margin-top: 1.25rem;
   }
@@ -84,7 +79,6 @@
   @include l.tablet {
     position: absolute;
   }
-
 }
 
 .profile_info_container {
@@ -110,23 +104,9 @@
     left: 8.75rem;
     top: 2.375rem;
   }
-
-}
-
-.profile_name {
-  color: var(--color-licorice);
-}
-
-.profile_date {
-  color: var(--color-slate_grey);
-}
-
-.profile_login {
-  color: var(--color-blue);
 }
 
 .bio_information {
-  color: var(--color-san_marion);
   padding: 1.25rem 1.875rem 1.25rem 0rem;
 
   @include l.mobile {
@@ -144,9 +124,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--color-ghost_white);
   border-radius: 0.625rem;
-  box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-ghost_white);
   height: 5.313rem;
   width: 30rem;
   margin: 1.25rem 0rem 1.25rem 0rem;
@@ -154,14 +132,6 @@
   @include l.mobile {
     width: auto;
   }
-}
-
-.github {
-  color: var(--color-san_marion);
-}
-
-.github_number {
-  color: var(--color-licorice);
 }
 
 .github_social {
@@ -181,33 +151,8 @@
 .social_items {
   display: flex;
   gap: 1.25rem;
-  color: var(--color-san_marion);
 }
 
 a {
   text-decoration: none;
-}
-
-a:link {
-  color: var(--color-san_marion);
-}
-
-a:visited {
-  color: var(--color-san_marion);
-}
-
-a:active {
-  color: var(--color-san_marion);
-}
-
-.profile_link:link {
-  color: var(--color-blue);
-}
-
-.profile_link:visited {
-  color: var(--color-blue);
-}
-
-.profile_link:active {
-  color: var(--color-blue);
 }

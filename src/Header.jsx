@@ -1,7 +1,3 @@
-import darkImage from "./assets/images/icon-moon.svg";
-// eslint-disable-next-line no-unused-vars
-import lightImage from "./assets/images/icon-sun.svg";
-
 function Header() {
 	return (
 		<>
@@ -12,14 +8,7 @@ function Header() {
 						<button
 							type="image"
 							className="header_button">
-							DARK
-							<img
-								className="header_image"
-								src={darkImage}
-								alt="dark moon"
-								width="20"
-								height="20"
-							/>
+							LIGHT
 						</button>
 					</div>
 				</div>

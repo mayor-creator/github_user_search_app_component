@@ -38,7 +38,7 @@ function Search() {
 		if (data) {
 			return (
 				<>
-					<section className="main_information">
+					<section className="main_information information">
 						<div
 							key={data.id}
 							className="information_container">
@@ -53,7 +53,7 @@ function Search() {
 								<div className="profile_info_container">
 									<div className="info_item">
 										<h1 className="profile_name">{data.name}</h1>
-										<p className="profile_login">
+										<p className="profile_login login">
 											<a
 												className="profile_link"
 												href={`${data.html_url}`}
@@ -70,7 +70,7 @@ function Search() {
 								</div>
 								<div className="bio_container">
 									<p className="bio_information">{data.bio}</p>
-									<div className="github_information">
+									<div className="github_information github_data">
 										<div className="github_items">
 											<span className="github">Repos</span>
 											<h2 className="github_number">{data.public_repos}</h2>
@@ -145,7 +145,7 @@ function Search() {
 		<>
 			<main className={`${theme} main`}>
 				<div className="wrapper">
-					<section className="main_search">
+					<section className="main_search search">
 						<label
 							htmlFor="username-search"
 							hidden={true}></label>
@@ -174,7 +174,7 @@ function Search() {
 
 					{/* Rendering default data */}
 					{defaultData && (
-						<section className="main_information">
+						<section className="main_information information">
 							<div className="information_container">
 								<img
 									className="avatar"
@@ -187,7 +187,7 @@ function Search() {
 									<div className="profile_info_container">
 										<div className="info_item">
 											<h1 className="profile_name">The Octocat</h1>
-											<p className="profile_login">@octocat</p>
+											<p className="profile_login login">@octocat</p>
 										</div>
 										<div className="info_item">
 											<p className="profile_date">Joined 25 Jan 2011</p>
@@ -198,7 +198,7 @@ function Search() {
 											Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 											Donec odio. Quisque volutpat mattis eros.
 										</p>
-										<div className="github_information">
+										<div className="github_information github_data">
 											<div className="github_items">
 												<span className="github">Repos</span>
 												<h2 className="github_number">8</h2>

@@ -7,6 +7,9 @@ import "../scss/components/_body.scss";
 import "../scss/components/_header.scss";
 import "../scss/components/_search.scss";
 
+//importing light and dark css file
+import "./Theme.css";
+
 import Header from "./Header";
 import Search from "./Search";
 

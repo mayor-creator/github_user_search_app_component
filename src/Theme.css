@@ -1,20 +1,141 @@
 .LIGHT {
   background-color: #F6F8FF;
-  color: #4B6A9B;
+  color: var(--color-san_marion);
+
+  .devfinder {
+    color: #141D2F;
+  }
+
+  .button {
+    background-color: var(--color-ghost_white);
+    color: #4B6A9B;
+  }
+
+  .search {
+    background-color: #FFFFFF;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #FEFEFE;
+  }
+
+  input {
+    background-color: #FFFFFF;
+    color: hsl(0, 0%, 0%)
+  }
+
+  .information {
+    background-color: #FFFFFF;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #FEFEFE;
+  }
+
+  .github_data {
+    background-color: #F6F8FF;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #F6F8FF;
+  }
+
+  a:link {
+    color: var(--color-san_marion);
+  }
+
+  a:visited {
+    color: var(--color-san_marion);
+  }
+
+  a:active {
+    color: var(--color-san_marion);
+  }
+
+  .login {
+    color: var(--color-blue);
+  }
+
+
+  .profile_link:link {
+    color: var(--color-blue);
+  }
+
+  .profile_link:visited {
+    color: var(--color-blue);
+  }
+
+  .profile_link:active {
+    color: var(--color-blue);
+  }
+
+  .github {
+    color: var(--color-san_marion);
+  }
+
+  .github_number {
+    color: var(--color-licorice);
+  }
+
+  .profile_name {
+    color: #2B3442;
+  }
+
 }
 
 .DARK {
   background-color: #141D2F;
   color: #FFFFFF;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  .button {
+    background-color: #141D2F;
+    color: #FFFFFF;
+  }
 
-* {
-  padding: 0rem;
-  margin: 0rem;
+  .search {
+    background-color: #1E2A47;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #1E2A47;
+  }
+
+  input {
+    background-color: #1E2A47;
+    color: #FFFFFF;
+  }
+
+  .information {
+    background-color: #1E2A47;
+  }
+
+  .github_data {
+    background-color: #141D2F;
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #141D2F;
+  }
+
+  a:link {
+    color: #FFFFFF;
+  }
+
+  a:visited {
+    color: #FFFFFF;
+  }
+
+  a:active {
+    color: #FFFFFF;
+  }
+
+  .login {
+    color: var(--color-blue);
+  }
+
+
+  .profile_link:link {
+    color: var(--color-blue);
+  }
+
+  .profile_link:visited {
+    color: var(--color-blue);
+  }
+
+  .profile_link:active {
+    color: var(--color-blue);
+  }
+
+  .github {
+    color: var(--color-white);
+  }
+
+  .github_number {
+    color: var(--color-white);
+  }
 }

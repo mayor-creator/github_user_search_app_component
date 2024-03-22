@@ -7,12 +7,15 @@ import profileImage from "./assets/images/github-octocat.jpg";
 import dayjs from "dayjs";
 
 import { useState } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 function Search() {
 	const gitHubAPI = `https://api.github.com/users/`;
 	const [text, setText] = useState("");
 	const [data, setData] = useState(null);
 	const [defaultData, setDefaultData] = useState(true);
+	const { theme } = useContext(ThemeContext);
 
 	// creating a async function to fetch api
 	const handleClickFetchAPI = async () => {
@@ -140,7 +143,7 @@ function Search() {
 
 	return (
 		<>
-			<main className="main">
+			<main className={`${theme} main`}>
 				<div className="wrapper">
 					<section className="main_search">
 						<label

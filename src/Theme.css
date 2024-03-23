@@ -1,34 +1,34 @@
 .LIGHT {
-  background-color: #F6F8FF;
+  background-color: var(--color-ghost_white);
   color: var(--color-san_marion);
 
   .devfinder {
-    color: #141D2F;
+    color: var(--color-midnight_express);
   }
 
   .button {
     background-color: var(--color-ghost_white);
-    color: #4B6A9B;
+    color: var(--color-san_marion);
   }
 
   .search {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #FEFEFE;
   }
 
   input {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     color: hsl(0, 0%, 0%)
   }
 
   .information {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #FEFEFE;
   }
 
   .github_data {
-    background-color: #F6F8FF;
-    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #F6F8FF;
+    background-color: var(--color-ghost_white);
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-ghost_white);
   }
 
   a:link {
@@ -73,43 +73,43 @@
 }
 
 .DARK {
-  background-color: #141D2F;
-  color: #FFFFFF;
+  background-color: var(--color-midnight_express);
+  color: var(--color-white);
 
   .button {
-    background-color: #141D2F;
-    color: #FFFFFF;
+    background-color: var(--color-midnight_express);
+    color: var(--color-white);
   }
 
   .search {
-    background-color: #1E2A47;
-    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #1E2A47;
+    background-color: var(--color-midnight_express_dark);
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-midnight_express_dark);
   }
 
   input {
-    background-color: #1E2A47;
-    color: #FFFFFF;
+    background-color: var(--color-midnight_express_dark);
+    color: var(--color-white);
   }
 
   .information {
-    background-color: #1E2A47;
+    background-color: var(--color-midnight_express_dark);
   }
 
   .github_data {
-    background-color: #141D2F;
-    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem #141D2F;
+    background-color: var(--color-midnight_express);
+    box-shadow: inset 1.25rem 0.625rem 1.25rem 0.625rem var(--color-midnight_express);
   }
 
   a:link {
-    color: #FFFFFF;
+    color: var(--color-white);
   }
 
   a:visited {
-    color: #FFFFFF;
+    color: var(--color-white);
   }
 
   a:active {
-    color: #FFFFFF;
+    color: var(--color-white);
   }
 
   .login {

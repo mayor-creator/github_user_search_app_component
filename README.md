@@ -51,23 +51,12 @@ Users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
-};
-```
+- React Hooks
 
 ### Continued development
+
+- Responsive Design
+- React Hooks
 
 ### Useful resources
 

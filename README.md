@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile View](./GitHubUserSearchAppMobile.png)
+![Desktop View](./GitHubUserSearchAppDesktop.png)
 
 ### Links
 
@@ -45,7 +46,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
